@@ -2,6 +2,8 @@
 var h1 = document.querySelector("h1");
 h1.style.color = "#900C3F";
 h1.style.textAlign="center";
+var x = 0;
+var array = Array();
 
 // Function stores variable on clicking save
 function contact_function() {
@@ -21,18 +23,25 @@ function contact_function() {
     	alert("The Second name must have no more than 10 characters");  
     	Submitted = "false";
 	}
-	if (fname.length=="" || sname.length=="") {
+	if (fname.length=="" || sname.length==""||tel.length==""||email=="") {
     	alert("Name field can not be empty!");  
     	Submitted = "false";
 	}
-	alert("Saved!");
+	else{
+		array[0] = fname;
+		array[1] = sname;
+		array[2] = email;
+		array[3] = address;
 	
+	alert("Saved!");
+	}
 
 }
 //Function to search through saved contacts
 function search_function(){
-	contactFields.style.display = "block";
-  var div = document.createElement("div");
-  div.innerHTML = fname.value;
-  contactFields.appendChild(div);
+	//contactFields.style.display = "block";
+	for (var y=0; y<array.length;y++) {var e=array[y]}
+  //var div = document.createElement("div");
+  //div.innerHTML = fname.value;
+  //contactFields.appendChild(div);
 }
