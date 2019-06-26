@@ -40,7 +40,7 @@ function contact_function() {
 //Function to search through saved contacts
 function search_function(){
 	//contactFields.style.display = "block";
-	for (var y=0; y<array.length;y++) {var e=array[y]}
+	for (var y=0; y<array.length;y++) {var e=array[y];}
   //var div = document.createElement("div");
   //div.innerHTML = fname.value;
   //contactFields.appendChild(div);
